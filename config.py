@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Bot configuration
-BOT_TOKEN = os.getenv('BOT_TOKEN', '8557760457:AAHLzE13TEJYGtE2RGnBmWggJ33fSt-ebI0')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 ADMIN_IDS = [int(id.strip()) for id in os.getenv('ADMIN_IDS', '').split(',') if id.strip()]
 
 # RSS configuration
